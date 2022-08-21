@@ -1,0 +1,36 @@
+
+body {
+	background: #020118;
+	color: #ffffff;
+}
+
+.cholochitro > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+
+.image-container {
+	position: relative;
+	transition: transform 0.5s;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 1);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 25px;
+	padding: 10px;
+	text-align: center;
+}
